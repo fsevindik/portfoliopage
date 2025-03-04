@@ -8,6 +8,20 @@ html, body {
   background: #0a0a0a;
   color: #f3f4f6;
 }
+@layer utilities {
+  @keyframes blink  {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+.animate-blink {
+  animation: blink 0.8s ease infinite;
+}
 
 @keyframes loading-bar {
   0% {
