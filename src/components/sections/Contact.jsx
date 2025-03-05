@@ -16,19 +16,27 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
 
     emailjs
-      .sendForm(
+      .send(
         import.meta.env.VITE_EMAIL_SERVICE_ID,
         import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-        e.target,
+        templateParams,
         import.meta.env.VITE_EMAIL_PUBLIC_KEY
       )
-      .then((result) => {
+      .then(() => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch(() => {
+        alert("Error! Please try again.");
+      });
   };        
 
   return (
