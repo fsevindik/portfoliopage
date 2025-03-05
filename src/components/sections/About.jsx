@@ -81,7 +81,7 @@ export const About = () => {
 
           {additionalSkills.length > 0 && (
             <div className="mt-6">
-              <h3 className="text-xl font-bold mb-4">Additional Skills</h3>
+              <h3 className="text-xl font-bold mb-4">Additional Skills and Tools</h3>
               <div className="flex flex-wrap gap-2">
                 {additionalSkills.map((tech, key) => (
                   <span

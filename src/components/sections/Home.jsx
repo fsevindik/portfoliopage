@@ -7,7 +7,7 @@ export const Home = () => {
       <div className="text-center z-10 px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r  from-blue-400 to-purle-600 
         bg-clip-text text-transparent  gradient-text leading-right">
-            hi, I'm Fırat Sevindik
+            Hi, I'm Fırat Sevindik
         </h1>
 
         <p className="text-gray-400 text-xl mb-8 max-w-lg mx-auto ">
