@@ -63,18 +63,19 @@ export const Contact = () => {
                 <FaPhoneAlt className="text-blue-500 group-hover:animate-pulse" />
                 <span className="hover:underline">+90 546 252 29 23</span>
               </a>
-<div className="flex flex-col border-1 border-gray-400 rounded-sm p-1 bg-gray-900" >
-
-              <a 
-                href="/assets/Fırat-SEVINDIK-CV-Resume-20250.pdf" 
-                download="Fırat-SEVINDIK-CV-Resume-20250.pdf"
-                className="inline-flex items-center gap-2 text-gray-200 hover:text-blue-500 
-                transition-all duration-300 hover:scale-105 group animate-pulse"
+              <div className="flex flex-col border-1 border-gray-400 rounded-sm p-1 bg-gray-900">
+                <a 
+                  href="/assets/Fırat-SEVINDIK-CV-Resume-20250.pdf" 
+                  download="Fırat-SEVINDIK-CV-Resume-20250.pdf"
+                  className="inline-flex items-center gap-2 text-gray-200 
+                  hover:text-gray-900 hover:bg-gray-300 hover:animate-none
+                  transition-all duration-300 hover:scale-105 group animate-pulse
+                  px-3 py-1 rounded-sm"
                 >
-                <FaFileDownload className="text-blue-500 group-hover:animate-bounce" />
-                <span className="hover:underline text-xs md:text-sm lg:text-md">Download CV</span>
-              </a>
-                </div>
+                  <FaFileDownload className="text-gray-200 group-hover:text-gray-900 transition-colors duration-300" />
+                  <span className="text-xs md:text-sm lg:text-md">Download CV</span>
+                </a>
+              </div>
             </div>
           </div>
 
