@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FaFileDownload } from "react-icons/fa";
+import {  FaEye } from "react-icons/fa";
 
 export const Contact = () => {
   useEffect(() => {
@@ -62,19 +62,18 @@ export const Contact = () => {
                 <FaPhoneAlt className="text-blue-500 group-hover:animate-pulse" />
                 <span className="hover:underline">+90 546 252 29 23</span>
               </a>
-              <div className="flex flex-col border-1 border-gray-400 rounded-sm p-1 bg-gray-900">
+              <div className="flex gap-2 border-1 border-gray-700 rounded-sm" >
                 <a
-                  href="/assets/FIRAT-SEVINDIK-CV-Resume-2025.pdf"
-                  download="FIRAT-SEVINDIK-CV-Resume-2025.pdf"
+                  href="https://flowcv.com/resume/5nf5chplhr"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-200 
-  hover:text-gray-900 hover:bg-gray-300 hover:animate-none
-  transition-all duration-300 hover:scale-105 group animate-pulse
-  px-3 py-1 rounded-sm"
+    hover:text-gray-900 hover:bg-gray-300 hover:animate-none
+    transition-all duration-300 hover:scale-105 group animate-pulse
+    px-3 py-1 rounded-sm"
                 >
-                  <FaFileDownload className="text-gray-200 group-hover:text-gray-900 transition-colors duration-300" />
-                  <span className="text-xs md:text-sm lg:text-md">
-                    Download CV
-                  </span>
+                  <FaEye className="text-gray-200  group-hover:text-gray-900 transition-colors duration-300" />
+                  <span className="text-xs md:text-sm lg:text-md">View CV</span>
                 </a>
               </div>
             </div>
