@@ -4,7 +4,6 @@ import emailjs from "emailjs-com";
 
 export const Contact = () => {
   useEffect(() => {
-    // EmailJS'i başlat
     emailjs.init(import.meta.env.VITE_EMAIL_PUBLIC_KEY);
   }, []);
 
