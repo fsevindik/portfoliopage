@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 
 export const Contact = () => {
   useEffect(() => {
@@ -49,6 +51,33 @@ export const Contact = () => {
             {" "}
             Get In Touch
           </h2>
+          
+          <div className="text-center space-y-4 mb-8">
+            
+            <div className="flex flex-col items-center gap-4">
+              <a 
+                href="tel:+905462522923" 
+                className="inline-flex items-center gap-2 text-gray-400 hover:text-blue-500 
+                transition-all duration-300 hover:scale-105 group"
+              >
+                <FaPhoneAlt className="text-blue-500 group-hover:animate-pulse" />
+                <span className="hover:underline">+90 546 252 29 23</span>
+              </a>
+<div className="flex flex-col border-1 border-gray-400 rounded-sm p-1 bg-gray-900" >
+
+              <a 
+                href="/assets/Fırat-SEVINDIK-CV-Resume-20250.pdf" 
+                download="Fırat-SEVINDIK-CV-Resume-20250.pdf"
+                className="inline-flex items-center gap-2 text-gray-200 hover:text-blue-500 
+                transition-all duration-300 hover:scale-105 group animate-pulse"
+                >
+                <FaFileDownload className="text-blue-500 group-hover:animate-bounce" />
+                <span className="hover:underline text-xs md:text-sm lg:text-md">Download CV</span>
+              </a>
+                </div>
+            </div>
+          </div>
+
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
