@@ -17,7 +17,7 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     const templateParams = {
       from_name: formData.name,
       from_email: formData.email,
@@ -38,7 +38,7 @@ export const Contact = () => {
       .catch(() => {
         alert("Error! Please try again.");
       });
-  };        
+  };
 
   return (
     <section
@@ -51,12 +51,11 @@ export const Contact = () => {
             {" "}
             Get In Touch
           </h2>
-          
+
           <div className="text-center space-y-4 mb-8">
-            
             <div className="flex flex-col items-center gap-4">
-              <a 
-                href="tel:+905462522923" 
+              <a
+                href="tel:+905462522923"
                 className="inline-flex items-center gap-2 text-gray-400 hover:text-blue-500 
                 transition-all duration-300 hover:scale-105 group"
               >
@@ -64,16 +63,18 @@ export const Contact = () => {
                 <span className="hover:underline">+90 546 252 29 23</span>
               </a>
               <div className="flex flex-col border-1 border-gray-400 rounded-sm p-1 bg-gray-900">
-                <a 
-                  href="/assets/Fırat-SEVINDIK-CV-Resume-20250.pdf" 
-                  download="Fırat-SEVINDIK-CV-Resume-20250.pdf"
+                <a
+                  href="/assets/FIRAT-SEVINDIK-CV-Resume-2025.pdf"
+                  download="FIRAT-SEVINDIK-CV-Resume-2025.pdf"
                   className="inline-flex items-center gap-2 text-gray-200 
-                  hover:text-gray-900 hover:bg-gray-300 hover:animate-none
-                  transition-all duration-300 hover:scale-105 group animate-pulse
-                  px-3 py-1 rounded-sm"
+  hover:text-gray-900 hover:bg-gray-300 hover:animate-none
+  transition-all duration-300 hover:scale-105 group animate-pulse
+  px-3 py-1 rounded-sm"
                 >
                   <FaFileDownload className="text-gray-200 group-hover:text-gray-900 transition-colors duration-300" />
-                  <span className="text-xs md:text-sm lg:text-md">Download CV</span>
+                  <span className="text-xs md:text-sm lg:text-md">
+                    Download CV
+                  </span>
                 </a>
               </div>
             </div>
