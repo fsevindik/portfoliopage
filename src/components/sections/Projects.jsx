@@ -12,19 +12,7 @@ export const Projects = () => {
           {" "}
           Some of My Projects
         </h2>
-  
-        <div className="mb-8 text-center">
-          <div className="relative py-3 px-2 max-w-md mx-auto">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-cyan-400/5 rounded-lg transform rotate-1"></div>
-            <div className="relative">
-              <blockquote className="italic text-sm sm:text-base text-white/80 font-light">
-                What I have done guarantees what I will do.
-              </blockquote>
-              <div className="mt-1 w-12 h-px bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
-            </div>
-          </div>
-        </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
             <h3 className="text-xl font-bold mb-2"> Cloning Todoist </h3>
