@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
-import { FaPhoneAlt } from "react-icons/fa";
-import {  FaEye } from "react-icons/fa";
+import { FaPhoneAlt, FaEye, FaGithub, FaLinkedin } from "react-icons/fa";
+import QRCode from "react-qr-code";
+
+const iconClass = "text-gray-400";
 
 export const Contact = () => {
   useEffect(() => {
@@ -41,14 +43,10 @@ export const Contact = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="min-h-screen flex items-center justify-center py-20"
-    >
+    <section id="contact" className="min-h-screen flex items-center justify-center py-20">
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            {" "}
             Get In Touch
           </h2>
 
@@ -56,23 +54,44 @@ export const Contact = () => {
             <div className="flex flex-col items-center gap-4">
               <a
                 href="tel:+905462522923"
-                className="inline-flex items-center gap-2 text-gray-400 hover:text-blue-500 
-                transition-all duration-300 hover:scale-105 group"
+                className="inline-flex items-center gap-2 text-gray-400 hover:text-blue-500 transition-all duration-300 hover:scale-105 group"
               >
                 <FaPhoneAlt className="text-blue-500 group-hover:animate-pulse" />
                 <span className="hover:underline">+90 546 252 29 23</span>
               </a>
-              <div className="flex gap-2 border-1 border-gray-700 rounded-sm" >
+              
+              <div className="flex flex-col md:hidden lg:hidden xl:hidden gap-6 my-6 items-center">
+                <div className="flex flex-col items-center space-y-2">
+                  <QRCode value="https://github.com/fsevindik" size={140} className="bg-white p-2 rounded" />
+                  <span className="text-xs mt-2 text-gray-400 flex items-center gap-1">
+                    <FaGithub className={iconClass} /> GitHub
+                  </span>
+                  <span className="text-xs text-gray-500">Scan to visit</span>
+                </div>
+
+                <hr className="border-gray-500 w-24 my-4" />
+
+                <div className="flex flex-col items-center space-y-2">
+                  <QRCode
+                    value="https://www.linkedin.com/in/f%C4%B1rat-sevindik-7660a8282/"
+                    size={140}
+                    className="bg-white p-2 rounded"
+                  />
+                  <span className="text-xs mt-2 text-gray-400 flex items-center gap-1">
+                    <FaLinkedin className={iconClass} /> LinkedIn
+                  </span>
+                  <span className="text-xs text-gray-500">Scan to visit</span>
+                </div>
+              </div>
+
+              <div className="flex gap-2 border border-gray-700 rounded-sm">
                 <a
                   href="https://flowcv.com/resume/5nf5chplhr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-gray-200 
-    hover:text-gray-900 hover:bg-gray-300 hover:animate-none
-    transition-all duration-300 hover:scale-105 group animate-pulse
-    px-3 py-1 rounded-sm"
+                  className="inline-flex items-center gap-2 text-gray-200 hover:text-gray-900 hover:bg-gray-300 hover:animate-none transition-all duration-300 hover:scale-105 group animate-pulse px-3 py-1 rounded-sm"
                 >
-                  <FaEye className="text-gray-200  group-hover:text-gray-900 transition-colors duration-300" />
+                  <FaEye className="text-gray-200 group-hover:text-gray-900 transition-colors duration-300" />
                   <span className="text-xs md:text-sm lg:text-md">View CV</span>
                 </a>
               </div>
@@ -89,9 +108,7 @@ export const Contact = () => {
                 value={formData.name}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Name..."
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               />
             </div>
 
@@ -104,9 +121,7 @@ export const Contact = () => {
                 value={formData.email}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="example@gmail.com"
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               />
             </div>
 
@@ -119,9 +134,7 @@ export const Contact = () => {
                 value={formData.message}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Your Message..."
-                onChange={(e) =>
-                  setFormData({ ...formData, message: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               />
             </div>
 
