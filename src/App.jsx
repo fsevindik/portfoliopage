@@ -9,6 +9,9 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/Footer";
+import LanguageSwitcher from "./LanguageSwitcher";
+
+
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +27,8 @@ function App() {
 
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+         <LanguageSwitcher /> 
+
         <Home />
         <About />
         <Projects />

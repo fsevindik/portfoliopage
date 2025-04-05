@@ -1,6 +1,8 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="projects"
@@ -10,20 +12,14 @@ export const Projects = () => {
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           {" "}
-          Some of My Projects
+         {t("projects_title")}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-            <h3 className="text-xl font-bold mb-2"> Cloning Todoist </h3>
+            <h3 className="text-xl font-bold mb-2"> {t("project_1_title")} </h3>
             <p className="text-gray-400 mb-4">
-              Cloning Todoist under professional mentorship was my first
-              project, implementing modern web technologies including HTML, CSS,
-              and JavaScript. Leveraged Chakra UI for a polished user interface
-              design, while utilizing Slack for efficient team communication.
-              This project provided valuable experience with real-world
-              development practices and professional project management
-              methodologies.
+              {t("project_1_description")}
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {[
@@ -54,7 +50,7 @@ export const Projects = () => {
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
-                View Project →
+                {t("view_project")} 
               </a>
             </div>
           </div>
@@ -66,14 +62,9 @@ export const Projects = () => {
                 transition-all
               "
           >
-            <h3 className="text-xl font-bold mb-2">Cloning StoroyEstimate </h3>
+            <h3 className="text-xl font-bold mb-2">{t("project_2_title")}</h3>
             <p className="text-gray-400 mb-4">
-              'Story Estimate' is a collaborative process where team members
-              assess the complexity of tasks using Planning Poker. Team members
-              independently estimate effort using Fibonacci numbers
-              (1,2,3,5,8,13), then discuss to reach consensus. The final story
-              point calculation helps in sprint planning and velocity tracking
-              in agile development.
+             {t("project_2_description")}
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {["React", "Tailwind CSS", "TypeScript", "Chackra UI"].map(
@@ -100,7 +91,7 @@ export const Projects = () => {
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
-                View Project →
+                {t("view_project")} 
               </a>
             </div>
           </div>
@@ -113,10 +104,11 @@ export const Projects = () => {
                 transition-all
               "
           >
-            <h3 className="text-xl font-bold mb-2">E-Commerce Web App</h3>
+            <h3 className="text-xl font-bold mb-2">
+              {t("project_3_title")}
+            </h3>
             <p className="text-gray-400 mb-4">
-              Full-stack(MERN) e-commerce with modern UI developed by Next.js,
-              user authentication and customizable product inventory.
+              {t("project_3_description")}
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {[
@@ -152,7 +144,7 @@ export const Projects = () => {
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
-                View Project →
+                {t("view_project")} 
               </a>
             </div>
           </div>
@@ -166,16 +158,10 @@ export const Projects = () => {
               "
           >
             <h3 className="text-xl font-bold mb-2">
-              Filmoliog: My Personal Movie Journal
+            {t("project_4_title")}
             </h3>
             <p className="text-gray-400 mb-4">
-              Hey! This is my movie review site that I built while learning web development.
-              I'm a huge movie fan, so I thought why not create something fun? Using the MERN
-              stack, I packed it with cool features like user profiles and live comments.
-              It's been amazing putting everything I've learned into practice - and I'm still
-              learning new things to add! The best part is seeing movie lovers chat about
-              their favorite films. Want to see how I built it? Just click the image to
-              check out my code!
+           {t("project_4_description")}
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               {[
@@ -207,7 +193,7 @@ export const Projects = () => {
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 transition-colors my-4"
               >
-                View Project →
+                {t("view_project")} 
               </a>
             </div>
           </div>

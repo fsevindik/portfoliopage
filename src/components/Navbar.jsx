@@ -1,16 +1,19 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import TranslationButton from "./TranslationButton";  
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
 
   return (
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-      <div className="max-w-5xl mx-auto px-4 ">
+      <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {" "}
-          <a href="#home" className="font-mono text-xl font-bold  text-white">
+          <a href="#home" className="font-mono text-xl font-bold text-white">
             f_
             <span className="text-blue-500">sevindik</span>
           </a>
@@ -25,30 +28,27 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               href="#home"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Home{" "}
+              {i18n.t("home_greeting")}
             </a>
             <a
               href="#about"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              About{" "}
+              {i18n.t("about_title")}
             </a>
             <a
               href="#projects"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Projects{" "}
+              {i18n.t("projects")}
             </a>
             <a
               href="#contact"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              {" "}
-              Contact{" "}
+              {i18n.t("contact_me")}
             </a>
+            <TranslationButton />
           </div>
         </div>
       </div>

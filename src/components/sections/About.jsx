@@ -1,7 +1,10 @@
 import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+  const { t } = useTranslation();
+
   const frontendSkills = [
     "React",
     "Next.js",
@@ -38,21 +41,17 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            About Me
+            {t("about_title")}
           </h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              Love coffee and TypeScript. With a strong military
-              background, I bring discipline and a fire-and-forget approach to
-              software development. I take ownership of tasks, execute them
-              efficiently, and move forward without unnecessary delays. I build
-              with structure and results in mind.
+              {t("about_description")}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Frontend Skills</h3>
+                <h3 className="text-xl font-bold mb-4">{t("frontend_skills")}</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, key) => (
                     <span
@@ -67,7 +66,7 @@ export const About = () => {
               </div>
 
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Backend Skills</h3>
+                <h3 className="text-xl font-bold mb-4">{t("backend_skills")}</h3>
                 <div className="flex flex-wrap gap-2">
                   {backendSkills.map((tech, key) => (
                     <span
@@ -85,7 +84,7 @@ export const About = () => {
             {additionalSkills.length > 0 && (
               <div className="mt-6">
                 <h3 className="text-xl font-bold mb-4">
-                  Additional Skills and Tools
+                  {t("additional_skills")}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {additionalSkills.map((tech, key) => (
@@ -104,25 +103,26 @@ export const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
+              <h3 className="text-xl font-bold mb-4">{t("education")}</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>Turkish Military Academy</strong>
+                  <strong> 
+                    {t("education_university")}:
+                  </strong>
                 </li>
-                <li>Advanced Leadership and Strategic Management Training</li>
+                <li>
+                  {t("education_description")}
+                </li>
               </ul>
             </div>
 
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">
-                💼 Professional Background
+                {t("professional_background")}
               </h3>
               <div className="text-gray-300 space-y-2">
-                <p>Military Leadership and Public Relations Professional</p>
-                <p>
-                  Developed strong leadership, communication, and strategic
-                  planning skills through roles in:
-                </p>
+                <p>{t("background_abilities")}</p>
+                
               </div>
             </div>
           </div>

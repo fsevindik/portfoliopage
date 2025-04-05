@@ -1,0 +1,45 @@
+{
+    "greeting": "Hi, I'm Firat Sevindik",
+    "contact_title": "Contact Me",
+    "name_placeholder": "Your Name",
+    "email_placeholder": "Your Email",
+    "message_placeholder": "Your Message",
+    "send_message": "Send Message",
+    "message_sent": "Message sent successfully!",
+    "message_error": "Error sending message. Please try again.",
+    "scan_to_visit": "Scan to Visit",
+    "view_cv": "View CV",
+  
+    "about_title": "About",
+    "about_description": "I love coffee and TypeScript. With a strong military background, I bring discipline and a 'fire-and-forget' approach to software development. I take ownership of tasks, execute them efficiently, and move forward without unnecessary delays. I focus on structure and results.",
+    "frontend_skills": "Frontend Skills",
+    "backend_skills": "Backend Skills",
+    "additional_skills": "Additional Skills and Tools",
+    "education": "🏫 Education",
+    "education_university": "Military Academy",
+    "education_description": "Systems Engineering, Advanced Leadership and Strategic Management Training",
+    "professional_background": "💼 Professional Background",
+    "background_abilities": "Leadership, Adaptability, Public Relations, and Crisis Management",
+  
+    "projects": "Projects",
+    "view_project": "View Project →",
+  
+    "home_greeting": "Home",
+    "home_description": "I'm a software developer who loves crafting clean, scalable solutions. My goal is to build solutions that offer both exceptional performance and a delightful user experience.",
+    "view_projects": "View Projects",
+    "contact_me": "Contact",
+  
+    "footer_quote": "What I have done guarantees what I will do.",
+    "footer_rights": "© {{year}} FIRAT SEVINDIK All rights reserved.",
+  
+    "projects_title": "Some of My Projects",
+    "project_1_title": "Cloning Todoist",
+    "project_1_description": "Cloning Todoist under professional mentorship was my first project, implementing modern web technologies including HTML, CSS, and JavaScript. I used Chakra UI for a polished user interface design and Slack for efficient team communication. This project provided valuable experience with real-world development practices and professional project management methodologies.",
+    "project_2_title": "Cloning StoryEstimate",
+    "project_2_description": "'Story Estimate' is a collaborative process where team members assess the complexity of tasks using Planning Poker. Team members independently estimate effort using Fibonacci numbers (1, 2, 3, 5, 8, 13), then discuss to reach consensus. The final story point calculation helps in sprint planning and velocity tracking in agile development.",
+    "project_3_title": "E-Commerce Web App",
+    "project_3_description": "A full-stack (MERN) e-commerce app with modern UI, developed using Next.js, featuring user authentication and a customizable product inventory.",
+    "project_4_title": "Filmolog: My Personal Movie Journal",
+    "project_4_description": "Hey! This is my movie review site that I built while learning web development. I'm a huge movie fan, so I thought, why not create something fun? Using the MERN stack, I packed it with cool features like user profiles and live comments. It's been amazing to put everything I've learned into practice — and I'm still learning new things to add! The best part is seeing movie lovers chat about their favorite films. Want to see how I built it? Just click the image to check out my code!"
+  }
+  

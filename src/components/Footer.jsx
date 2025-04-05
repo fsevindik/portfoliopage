@@ -1,6 +1,9 @@
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="py-8 bg-black/20 border-t border-white/10">
       <div className="max-w-5xl mx-auto px-4">
@@ -36,10 +39,10 @@ export const Footer = () => {
           </div>
           
           <p className="italic text-sm text-white/70 font-light mb-4">
-            What I have done guarantees what I will do.
+            {t("footer_quote")}
           </p>
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} FIRAT SEVINDIK All rights reserved.
+            {t("footer_rights", { year: new Date().getFullYear() })}
           </p>
         </div>
       </div>
