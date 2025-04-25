@@ -27,9 +27,9 @@ const LanguageSwitcher = ({ onLanguageChange }) => {
         }`}
       >
         {selectedLanguage === "en" ? (
-          <span>EN</span>
-        ) : (
           <span>TR</span>
+        ) : (
+          <span>EN</span>
         )}
       </span>
     </button>
