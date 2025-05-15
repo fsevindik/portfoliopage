@@ -39,6 +39,10 @@
     "project_3_title": "E-Ticaret Web Uygulaması",
     "project_3_description": "Modern arayüzle geliştirilmiş bir full-stack (MERN) e-ticaret uygulaması, kullanıcı doğrulaması ve özelleştirilebilir ürün envanteri gibi özellikler içeriyor.",
     "project_4_title": "Filmolog: Kişisel Film Günlüğüm",
-    "project_4_description": "Bu proje, şu ana kadar öğrendiklerimle oluşturduğum film inceleme sitesidir. Ben de bir film hayranıyım, bu yüzden eğlenceli bir şey yapmayı düşündüm! MERN stack olarak başladım, kullanıcı profilleri ve canlı yorumlar gibi özelliklerle donattım. Projenin dallanıp budaklanarak geliştirilmesini görmek güzel bir his, ve hala yeni şeyler eklemek için öğrenmeye devam ediyorum! En iyi kısmı, film severlerin en sevdikleri filmler hakkında sohbet etmeleri. Nasıl yaptığımı görmek ister misiniz? Buyrun bir göz atın!"
+    "project_4_description": "Bu proje, şu ana kadar öğrendiklerimle oluşturduğum film inceleme sitesidir. Ben de bir film hayranıyım, bu yüzden eğlenceli bir şey yapmayı düşündüm! MERN stack olarak başladım, kullanıcı profilleri ve canlı yorumlar gibi özelliklerle donattım. Projenin dallanıp budaklanarak geliştirilmesini görmek güzel bir his, ve hala yeni şeyler eklemek için öğrenmeye devam ediyorum! En iyi kısmı, film severlerin en sevdikleri filmler hakkında sohbet etmeleri. Nasıl yaptığımı görmek ister misiniz? Buyrun bir göz atın!",
+
+    "watch_intro_video": "Tanıtım Videosunu İzle",
+    "close_video": "Videoyu kapat"
+
   }
   

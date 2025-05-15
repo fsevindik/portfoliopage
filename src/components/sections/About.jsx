@@ -1,6 +1,8 @@
 import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { useTranslation } from "react-i18next";
+import PortfolioVideo from "../PortfolioVideo";
+
 
 export const About = () => {
   const { t } = useTranslation();
@@ -22,6 +24,7 @@ export const About = () => {
     "SQL",
     "Ubuntu",
     "Linux",
+    "Docker", 
   ];
 
   const additionalSkills = [
@@ -48,6 +51,11 @@ export const About = () => {
             <p className="text-gray-300 mb-6">
               {t("about_description")}
             </p>
+            
+         
+            <div className="mb-6">
+              <PortfolioVideo />
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
