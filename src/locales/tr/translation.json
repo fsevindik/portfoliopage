@@ -1,4 +1,5 @@
 {
+  
     "greeting": "Merhaba, ben Fırat Sevindik",
     "contact_title": "İletişim",
     "name_placeholder": "Adınız",
@@ -9,28 +10,31 @@
     "message_error": "Mesaj gönderilirken hata oluştu. Lütfen tekrar deneyin.",
     "scan_to_visit": "Ziyaret etmek için tarayın",
     "view_cv": "Özgeçmişi Görüntüle",
-  
+    
     "about_title": "Hakkımda",
-    "about_description": "Kahve benden sorulur ve TypeScript'le aram iyidir. Güçlü bir askeri geçmişe sahip olarak, yazılım dünyasına disiplin ve 'at unut' yaklaşımını getiriyorum. Görevleri sahipleniyor, gereksiz gecikmeler olmadan ilerliyorum. Yapı ve sonuç odaklı tasarlıyorum.",
+    "about_description": "İşletme mezunu sistem mühendisiyim. Jandarma teşkilatında saha ekip liderliği, halkla ilişkiler ve kriz yönetimi deneyimi kazandım. Zorluklar karşısında hızlı çözüm üretme, ekip koordinasyonu ve farklı birimlerle eşgüdümlü çalışma konularında güçlü tecrübeye sahibim. React, Node.js, Linux sistemleri ve AI araçları gibi teknolojiler hayatımın bir parçası. İnsan ve süreç odaklı rollerde değer katmaya odaklıyım.",
     "frontend_skills": "Ön Yüz Becerileri",
     "backend_skills": "Arka Yüz Becerileri",
     "additional_skills": "Ek Beceriler ve Araçlar",
     "education": "🏫 Eğitim",
+    "education_highschool": "Kuleli Askeri Lisesi",
     "education_university": "Milli Savunma Üniversitesi",
-    "education_description": "Sistem Mühendisliği, Gelişmiş Strateji ve Liderlik Eğitimi",
+    "education_description": "Sistem Mühendisliği, Gelişmiş Strateji ve Liderlik, Halkla İlişkiler",
     "professional_background": "💼 Profesyonel Geçmiş",
     "background_abilities": "Liderlik, Adaptasyon ve Halkla İlişkiler Uzmanı, Kriz Yönetimi",
-  
+    
     "projects": "Projeler",
     "view_project": "Projeyi Görüntüle →",
-  
+    
     "home_greeting": "Anasayfa",
-    "home_description": "Temiz, ölçeklenebilir çalışmalar üretmeyi seven bir yazılımcıyım. Amacım çağı yakalayarak hem performans hem de keyifli bir kullanıcı deneyimi sunan çözümler oluşturmaktır.",
-    "view_projects": "Projeleri Görüntüle",
+    "home_description": "Sistem Mühendisi | Saha Ekip Lideri | Halkla İlişkiler & Operasyon | React/Node Altyapısı",
+    "view_projects": "Yan Projeler",
     "contact_me": "İletişim",
+    "career_note": "💼 Aylık 1500 USD civarı net gelir ve sağlık sigortası içeren teklifler dikkate alınacaktır.",
+    
     "footer_quote": "Yaptıklarım, yapacaklarımın garantisidir.",
     "footer_rights": "© {{year}} FIRAT SEVİNDİK Bütün hakları saklıdır.",
-  
+    
     "projects_title": "Projelerimden Bazıları",
     "project_1_title": "Todoist Klonlama",
     "project_1_description": "Todoist'i profesyonel mentorluk altında klonlamak, HTML, CSS ve JavaScript gibi modern web teknolojilerini kullanarak yapmak benim ilk projemdi. Niş bir kullanıcı arayüzü tasarımı için Chakra UI kullanırken, verimli bir takım çalışması için Slack kullanıldı. Bu projeyle gerçek hayat senaryolarına hazırlandım ve profesyonel proje yönetim metodolojileri konusunda değerli deneyimler kazandım.",
@@ -40,9 +44,7 @@
     "project_3_description": "Modern arayüzle geliştirilmiş bir full-stack (MERN) e-ticaret uygulaması, kullanıcı doğrulaması ve özelleştirilebilir ürün envanteri gibi özellikler içeriyor.",
     "project_4_title": "Filmolog: Kişisel Film Günlüğüm",
     "project_4_description": "Bu proje, şu ana kadar öğrendiklerimle oluşturduğum film inceleme sitesidir. Ben de bir film hayranıyım, bu yüzden eğlenceli bir şey yapmayı düşündüm! MERN stack olarak başladım, kullanıcı profilleri ve canlı yorumlar gibi özelliklerle donattım. Projenin dallanıp budaklanarak geliştirilmesini görmek güzel bir his, ve hala yeni şeyler eklemek için öğrenmeye devam ediyorum! En iyi kısmı, film severlerin en sevdikleri filmler hakkında sohbet etmeleri. Nasıl yaptığımı görmek ister misiniz? Buyrun bir göz atın!",
-
+    
     "watch_intro_video": "Tanıtım Videosunu İzle",
     "close_video": "Videoyu kapat"
-
-  }
-  
+}

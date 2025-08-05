@@ -113,6 +113,11 @@ export const About = () => {
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">{t("education")}</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
+                   <li>
+                  <strong> 
+                    {t("education_highschool")}:
+                  </strong>
+                </li>
                 <li>
                   <strong> 
                     {t("education_university")}:
